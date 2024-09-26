@@ -1,0 +1,18 @@
+[package]
+name = "scone-sessionify-call-tree"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+anyhow = "1.0.86"
+rand = "0.8.5"
+reqwest = { version = "0.12.5", features = ["native-tls"] }
+serde = { version = "1.0.203", features = ["derive"] }
+serde_json = "1.0.118"
+serde_yaml = "0.9.34"
+tokio = { version = "1.38.0", features = ["full"] }
+openssl = { version = "*", features = ["vendored"] }
+
+[lib]
+name = "scone_sessionify_call_tree"
+path = "src/lib.rs"
